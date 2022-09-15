@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header-wrapper">
+                    <h1>Find your film</h1>
+                    <a href="watchlist.html">My Watchlist</a>
+                </div>    
+                <div class="search-bar">
+                    <input id="search-input" type="text" placeholder="Search for a movie">
+                    <button id="btn-search">Search</button>
+                </div>        
+            </header>
+            <main id="main">
+                <div class="placeholder" id="placeholder">
+                    <img src="./img/placeholder.png">
+                    <h3>Start exploring</h3>
+                </div>
+                <div id="not-found-text" class="placeholder">
+                    <h3>
+                        Unable to find what you're looking for. Please try another search.
+                    </h3>
+                </div>
+            </main>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
