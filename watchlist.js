@@ -25,7 +25,7 @@ if(localStorage.getItem('watchlist')){
 }
 
 function displayFilms(films){
-    const requests=films.map(id=>fetch(`http://www.omdbapi.com/?i=${id}&apikey=${apikey}`))
+    const requests=films.map(id=>fetch(`https://www.omdbapi.com/?i=${id}&apikey=${apikey}`))
     Promise.all(requests).then(
         responses=>{
             console.log(responses)

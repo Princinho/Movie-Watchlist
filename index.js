@@ -24,7 +24,7 @@ function getFilms(searchQuery){
 }
 function displayFilms(films){
     const filmIds=films.map(f=>f.imdbID)
-    const requests=filmIds.map(id=>fetch(`http://www.omdbapi.com/?i=${id}&apikey=${apikey}`))
+    const requests=filmIds.map(id=>fetch(`https://www.omdbapi.com/?i=${id}&apikey=${apikey}`))
     Promise.all(requests).then(
         responses=>{
             Promise.all(responses.map(r=>r.json()))
